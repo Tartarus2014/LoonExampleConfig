@@ -1,3 +1,6 @@
+#Loon自定义节点格式
+#关于订阅流量解析：目前会读取response header中的Subscription-Userinfo信息，具体格式如下：Subscription-Userinfo:upload=1111;download=111;total=123456;expire=1614527045
+
 #ss
 # 节点名称 = 协议，服务器地址，端口，加密方式，密码，fast-open=是否开启fast open（需要节点支持），udp=是否在UDP中使用（需要节点支持）,udp-port=shadow-tls由于暂时不支持udp转发，这里填写原ss 端口用作UDP转发
 ss1 = Shadowsocks,example.com,443,aes-128-gcm,"password",fast-open=false,udp=true
